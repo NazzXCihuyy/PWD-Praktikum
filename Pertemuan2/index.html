@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Form</title>
+</head>
+<body>
+
+    <table>
+        <thead>
+        
+            
+
+        
+        </thead>
+    </table>
+
+    <h2>Form Mahasiswa</h2>
+    <form method="post">
+    
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+            <table>
+            <tr>
+                <td>Nama </td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>NPM</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td>:</td>
+                <td>
+                    <select name="Kelas">
+                        <option selected disabled>.</option>
+                        <option value="A">Kelas A</option>
+                        <option value="B">Kelas B</option>
+                        <option value="C">Kelas C</option>
+                        <option value="E">Kelas E</option>
+                        <option value="Mage">Kelas Mage</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="jk" value="Pria">Pria 
+                    <input type="radio" name="jk" value="Wanita">Wanita 
+                </td>
+            </tr>
+            </table>
+        </fieldset>
+
+            
+             <fieldset>
+                <legend>Tempat Tinggal Mahasiswa</legend>
+                <table>
+            <tr>
+                <td>Alamat </td>
+                <td>:</td>
+                <td><textarea rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td>Kecamatan</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Kabupaten/Kotamadya</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Provinsi</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Kode pos</td>
+                <td>:</td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+        </fieldset>
+
+        
+
+        <fieldset>
+            <legend>Lain-Lainnya</legend>
+            <table>
+                <tr>
+                   <td>Bahasa Pemrograman</td>
+                   <td>:</td>
+                   <td>
+                       <input type="checkbox" name="hobi" value="C/C++">C/C++
+                       <input type="checkbox" name="hobi" value="Go Lang">Go Lang
+                       <input type="checkbox" name="hobi" value="Python">Python
+                       <input type="checkbox" name="hobi" value="Lainnya">Lainnya <br>
+                       <input type="checkbox" name="hobi" value="PHP">PHP
+                       <input type="checkbox" name="hobi" value="JavaScript">JavaScript
+                       <input type="checkbox" name="hobi" value="Ruby">Ruby
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kegiatan</td>
+                    <td>:</td>
+                    <td><input type="checkbox" name="hobi" value="Organisasi">Organisasi Kemahasiswaan
+                    <input type="checkbox" name="hobi" value="Kepanitiaan">Bidang Olahraga
+                    <input type="checkbox" name="hobi" value="Lainnya">Lainnya <br>
+                    <input type="checkbox" name="hobi" value="Lainnya">Oraganisasi di Luar Kampus
+                    <input type="checkbox" name="hobi" value="Lainnya">Bidang Seni
+                
+                </td>
+
+                </tr>
+            </table>
+           
+                
+            
+        </fieldset>
+    </form>
+
+    <input type="reset" name="reset" value="Reset">
+    <input type="submit" name="submit" value="Submit">
+    
+</body>
+</html>
