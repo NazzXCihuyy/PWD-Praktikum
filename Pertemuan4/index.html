@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nazz Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+  </div>
+
+  <header class="navbar">
+    <div class="container nav-content">
+      <h1 class="logo">@Nazz.</h1>
+      <div class="nav-scroll-indicator" id="nav-scroll-indicator" title="Scroll Position">
+                Scroll: <span id="scroll-val">0</span>px
+            </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="tag">Creative Developer & Designer</p>
+
+        <h2>
+          Building digital
+          <span>experiences</span>
+          that feel premium.
+        </h2>
+
+        <p class="description">
+          I create visually striking websites and modern digital products with
+          smooth interactions and high-end user experiences.
+        </p>
+
+        <div class="hero-buttons">
+         <button class="primary-btn" onclick="location.href='#projects'">
+  View Projects
+</button>
+
+<button class="secondary-btn" onclick="location.href='#contact'">
+  Let's Talk
+</button>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="preview-card">
+          <img src="img/foto.jpg" alt="Portfolio Preview">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about container fade-in">
+    <div>
+      <p class="section-tag">About Me</p>
+      <h3>
+        Designing brands and websites with clarity, motion, and impact.
+      </h3>
+    </div>
+
+    <div>
+      <p class="about-text">
+        Junior frontend developer with a strong passion for modern web development and a mindset centered around learning by doing.
+      </p>
+
+    </div>
+  </section>
+
+  <section id="services" class="services container slide-in-left">
+  <p class="section-tag">Services</p>
+  <h3>What I Can Do</h3>
+
+  <div class="services-grid">
+    <div class="service-box">Web Design</div>
+    <div class="service-box">UI/UX Design</div>
+    <div class="service-box">Frontend Development</div>
+    <div class="service-box">Brand Strategy</div>
+  </div>
+</section>
+
+  <section id="projects" class="projects container bounce-in">
+    <div class="section-header">
+      <div>
+        <p class="section-tag">Selected Work</p>
+        <h3>Featured Projects</h3>
+      </div>
+ <button class="secondary-btn">All Projects</button>
+    </div>
+
+    <div id="project-list"></div>
+  </section>
+
+  <section class="process container fade-in">
+    <div class="center">
+      <p class="section-tag">Workflow</p>
+      <h3>My Creative Process</h3>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card">
+        <span>01</span>
+        <h4>Discovery</h4>
+        <p>Understanding goals and vision.</p>
+      </div>
+
+      <div class="process-card">
+        <span>02</span>
+        <h4>Strategy</h4>
+        <p>Planning structure and user flow.</p>
+      </div>
+
+      <div class="process-card">
+        <span>03</span>
+        <h4>Design</h4>
+        <p>Creating premium modern visuals.</p>
+      </div>
+
+      <div class="process-card">
+        <span>04</span>
+        <h4>Launch</h4>
+        <p>Optimizing and publishing the project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section slide-in-left">
+    <div class="container cta-box">
+      <p class="section-tag">Let's Build Something Great</p>
+      <h3>Ready to elevate your digital presence?</h3>
+
+      <p class="cta-text">
+        Whether you need a portfolio, startup website, or modern brand
+        experience — let's create something unforgettable.
+      </p>
+
+      <button class="primary-btn">Start a Project</button>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container footer-content">
+      <p>© 2026 Nazz. All rights reserved.</p>
+
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+        <a href="https://github.com/NazzXCihuyy">gitHub</a>
+      </div>
+    </div>
+  </footer>
+   <button id="btnBackToTop" class="scroll-action" aria-label="Kembali ke atas header"
+        title="Kembali ke atas (Top Page Header)">
+        <svg class="scroll-arrow" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="square" stroke-linejoin="miter">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+        <span class="scroll-label">TOP</span>
+        <span class="scroll-tip">KE ATAS</span>
+    </button>
+  <script src="script.js"></script>
+</html>
