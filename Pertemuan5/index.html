@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokoKu - Electronic Center</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo">Toko<span>Ku</span></div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder=" Cari produk...">
+            </div>
+            <button id="btnToggleCart"> Keranjang (<span id="cartCount">0</span>)</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="product-section">
+            <h2 class="section-title"> Daftar Produk</h2>
+            <div id="productContainer"></div>
+        </div>
+
+        <div class="cart-section" id="cartPanel">
+            <div class="cart-header"> Keranjang Belanja</div>
+            <div class="cart-body">
+                <ul id="cartList"></ul>
+                <p class="cart-empty-msg" id="emptyMsg">Keranjang masih kosong.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-summary">
+                    <span class="label">Jumlah Item:</span>
+                    <span class="value" id="totalItems">0</span>
+                </div>
+                <div class="cart-total">
+                    Total: Rp <span id="totalPrice">0</span>
+                </div>
+                <div class="cart-actions">
+                    <button id="btnEmpty"> Kosongkan</button>
+                    <button id="btnCheckout"> Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="orderSummary"></div>
+
+    <footer>
+        &copy; 2026 TokoKu &mdash; Electronic Center
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
